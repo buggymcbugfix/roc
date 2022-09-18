@@ -459,7 +459,7 @@ I concluded that it would be a mistake to have it in Roc.
 
 The plan is for Roc to never have linear types, dependent types, refinement types, or uniqueness types.
 
-Fast compile times are a primary goal for Roc, and a major downside of refinement types is an exponential increase in compile times. This rules out refinement types for Roc.
+Fast compile times are a primary goal for Roc, and a major downside of refinement types is an increase in compile times. This rules out refinement types for Roc.
 
 If Roc were to have linear types or uniqueness types, they would move things that are currently behind-the-scenes performance optimizations into the type system. For them to be effective across the ecosystem, they couldn't really be opt-in; everyone would have to use them, even those for whom the current system of behind-the-scenes optimizations already met their performance needs without any added type system complexity. Since the overwhelming majority of use cases are expected to fall into that latter group, adding linear types or uniqueness types to Roc would be a net negative for the ecosystem.
 
